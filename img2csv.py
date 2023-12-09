@@ -41,7 +41,7 @@ def main():
     parser = argparse.ArgumentParser(description="Convert image to dataframe")
     parser.add_argument("input", type=str, help="Path to input image")
     parser.add_argument(
-        "output", type=str, help="Path to output csv", default="output.csv"
+        "-o", "--output", type=str, help="Path to output csv", default="output.csv"
     )
     args = parser.parse_args()
 
