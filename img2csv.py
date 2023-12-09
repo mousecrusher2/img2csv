@@ -17,7 +17,7 @@ def img2df(
     """
 
     # Only accept RGB or grayscale images
-    if img.mode != "RGB" or img.mode != "L":
+    if img.mode != "RGB" and img.mode != "L":
         raise ValueError("Image not in RGB or grayscale mode")
 
     # Convert image to a numpy array
