@@ -61,17 +61,23 @@ def main():
         if isinstance(df, tuple):
             # If image is RGB, save 3 dataframes
             df[0].to_csv(
-                output_path.parent / f"{output_path.stem}_red.csv", index=False
+                output_path.parent / f"{output_path.stem}_red.csv",
+                index=False,
+                header=False,
             )
             df[1].to_csv(
-                output_path.parent / f"{output_path.stem}_green.csv", index=False
+                output_path.parent / f"{output_path.stem}_green.csv",
+                index=False,
+                header=False,
             )
             df[2].to_csv(
-                output_path.parent / f"{output_path.stem}_blue.csv", index=False
+                output_path.parent / f"{output_path.stem}_blue.csv",
+                index=False,
+                header=False,
             )
         else:
             # If image is grayscale, save 1 dataframe
-            df.to_csv(output_path, index=False)
+            df.to_csv(output_path, index=False, header=False)
 
 
 if __name__ == "__main__":
