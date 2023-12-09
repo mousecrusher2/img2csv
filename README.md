@@ -7,6 +7,14 @@ If the image is a grayscale image, only one csv file is generated.
 
 ## Usage
 
+Install the requirements:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the script:
+
 ```bash
 python img2csv.py <image_path> <csv_path>
 ```
