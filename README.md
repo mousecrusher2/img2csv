@@ -16,5 +16,5 @@ pip install -r requirements.txt
 Run the script:
 
 ```bash
-python img2csv.py <image_path> <csv_path>
+python img2csv.py <image_path> -o <csv_path>
 ```
